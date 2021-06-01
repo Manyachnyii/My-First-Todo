@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Список ToDo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <article>
+      <header>
+        <h1>Список ToDo</h1>
+        <form>
+          <input
+            type="text"
+            placeholder="Добавить в список"
+            maxlength="140"
+            required
+            autofocus
+          />
+        </form>
+      </header>
+      <ul id="list"></ul>
+      <footer>
+        <label
+          ><i class="fas fa-eye"></i>
+          <select>
+            <option value="all" selected>Все задачи</option>
+            <option value="checked">Сделано</option>
+            <option value="unchecked">Осталось</option>
+          </select>
+        </label>
+      </footer>
+    </article>
+
+    <script src="main.js"></script>
+  </body>
+</html>
